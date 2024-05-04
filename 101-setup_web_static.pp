@@ -48,7 +48,7 @@ file { '/data/web_static/shared':
 
 file { '/data/web_static/releases/test/index.html':
   ensure  => 'present',
-  content => "My School is the best\n"
+  content => "Holberton School Puppet\n"
 } ->
 
 file { '/data/web_static/current':
