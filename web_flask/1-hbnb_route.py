@@ -6,11 +6,21 @@ from flask import Flask
 
 app = Flask(__name__)
 
+
 @app.route('/', strict_slashes=False)
 def home():
     """
+    Display Hello HBNB
     """
     return 'Hello HBND'
+
+
+@app.route('/hbng', strict_slashes=False)
+def hbnb():
+    """
+    Display HBNB
+    """
+    return 'HBNB'
 
 
 if __name__ == "__main__":
