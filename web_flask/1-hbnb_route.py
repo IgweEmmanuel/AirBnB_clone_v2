@@ -7,7 +7,7 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/', strict_slashes=False)
+@app.route("/", strict_slashes=False)
 def home():
     """
     Display Hello HBNB
@@ -15,7 +15,7 @@ def home():
     return 'Hello HBND'
 
 
-@app.route('/hbng', strict_slashes=False)
+@app.route("/hbng", strict_slashes=False)
 def hbnb():
     """
     Display HBNB
